@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Queries</title>
+    <style>
+      .soft-drinks {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        margin: 5% 0;
+      }
+      header * {
+        margin: 0;
+      }
+      h1 {
+        margin-bottom: 0.4rem;
+      }
+      .soft-drinks-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      .soft-drink-card {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid #cecece;
+        display: flex;
+        gap: 1rem;
+      }
+      .soft-drink-card img {
+        width: 50%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .soft-drink-card .info {
+        width: 50%;
+      }
+      h3 {
+        margin-top: 1rem;
+      }
+      h5 {
+        font-size: 1.3rem;
+        margin: 0;
+      }
+      a {
+        width: 100%;
+        background: black;
+        height: 50px;
+        font-size: 1.2rem;
+        display: grid;
+        place-items: center;
+        color: white;
+        text-decoration: none;
+        margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="soft-drinks">
+      <header>
+        <h1>Welcome to my Soft Drink Catalog</h1>
+        <p>
+          See some little information about any soft drink that you might love.
+        </p>
+      </header>
+      <main class="soft-drinks-grid">
+        <!-- SOFT DRINK CARD COMPONENT -->
+        <div class="soft-drink-card">
+          <img src="/images/coke.png" alt="" />
+          <div class="info">
+            <h3>Coke</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              voluptates quaerat excepturi laudantium
+            </p>
+            <h5>₦ 150 <sup>estimated RRP</sup></h5>
+            <a href="#">See Official Website</a>
+          </div>
+        </div>
+        <div class="soft-drink-card">
+          <img src="/images/fanta.png" alt="" />
+          <div class="info">
+            <h3>Fanta</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              voluptates quaerat excepturi laudantium
+            </p>
+            <h5>₦ 150 <sup>estimated RRP</sup></h5>
+            <a href="#">See Official Website</a>
+          </div>
+        </div>
+        <div class="soft-drink-card">
+          <img src="/images/sprite.png" alt="" />
+          <div class="info">
+            <h3>Sprite</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              voluptates quaerat excepturi laudantium
+            </p>
+            <h5>₦ 150 <sup>estimated RRP</sup></h5>
+            <a href="#">See Official Website</a>
+          </div>
+        </div>
+        <div class="soft-drink-card">
+          <img src="/images/pepsi.png" alt="" />
+          <div class="info">
+            <h3>Pepsi</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              voluptates quaerat excepturi laudantium
+            </p>
+            <h5>₦ 150 <sup>estimated RRP</sup></h5>
+            <a href="#">See Official Website</a>
+          </div>
+        </div>
+        <div class="soft-drink-card">
+          <img src="/images/mirinda.png" alt="" />
+          <div class="info">
+            <h3>Mirinda</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              voluptates quaerat excepturi laudantium
+            </p>
+            <h5>₦ 150 <sup>estimated RRP</sup></h5>
+            <a href="#">See Official Website</a>
+          </div>
+        </div>
+        <div class="soft-drink-card">
+          <img src="/images/7up.png" alt="" />
+          <div class="info">
+            <h3>7Up</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              voluptates quaerat excepturi laudantium
+            </p>
+            <h5>₦ 150 <sup>estimated RRP</sup></h5>
+            <a href="#">See Official Website</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
